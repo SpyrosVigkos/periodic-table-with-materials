@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" class="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Less Start -->
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
@@ -75,14 +76,14 @@
           <div class="cell"></div>
           <div class="cell"></div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="boron">
               <div class="at_num">5</div>
               <div class="symbol">B</div>
               <div class="at_details name">boron<br />10.81</div>
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element"  id="carbon">
               <div class="at_num">6</div>
               <div class="symbol">C</div>
               <div class="at_details name">carbon<br />12.011</div>
@@ -96,7 +97,7 @@
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="oxygen">
               <div class="at_num">8</div>
               <div class="symbol">O</div>
               <div class="at_details name">oxygen<br />15.999</div>
@@ -125,8 +126,8 @@
               <div class="at_details name">sodium<br />22.990</div>
             </div>
           </div>
-          <div class="cell" id="Mg">
-            <div class="element" id="Mg">
+          <div class="cell">
+            <div class="element">
               <div class="at_num">12</div>
               <div class="symbol">Mg</div>
               <div class="at_details name">magnesium<br />24.305</div>
@@ -143,7 +144,7 @@
           <div class="cell"></div>
           <div class="cell"></div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="al">
               <div class="at_num">13</div>
               <div class="symbol">Al</div>
               <div class="at_details name">aluminum<br />26.982</div>
@@ -208,7 +209,7 @@
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="ti">
               <div class="at_num">22</div>
               <div class="symbol">Ti</div>
               <div class="at_details name">titanium<br />47.867</div>
@@ -257,14 +258,14 @@
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="cu">
               <div class="at_num">29</div>
               <div class="symbol">Cu</div>
               <div class="at_details name">copper<br />63.546</div>
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="zn">
               <div class="at_num">30</div>
               <div class="symbol">Zn</div>
               <div class="at_details name">zinc<br />65.38</div>
@@ -292,7 +293,7 @@
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="se">
               <div class="at_num">34</div>
               <div class="symbol">Se</div>
               <div class="at_details name">selenium<br />78.96</div>
@@ -336,7 +337,7 @@
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="zr">
               <div class="at_num">40</div>
               <div class="symbol">Zr</div>
               <div class="at_details name">zirconium<br />91.224</div>
@@ -378,14 +379,14 @@
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="pd">
               <div class="at_num">46</div>
               <div class="symbol">Pd</div>
               <div class="at_details name">palladium<br />106.42</div>
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="ag">
               <div class="at_num">47</div>
               <div class="symbol">Ag</div>
               <div class="at_details name">silver<br />107.87</div>
@@ -406,7 +407,7 @@
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="sn">
               <div class="at_num">50</div>
               <div class="symbol">Sn</div>
               <div class="at_details name">tin<br />118.71</div>
@@ -507,7 +508,7 @@
             </div>
           </div>
           <div class="cell">
-            <div class="element">
+            <div class="element" id="gold">
               <div class="at_num">79</div>
               <div class="symbol">Au</div>
               <div class="at_details name">gold<br />196.97</div>
@@ -908,24 +909,32 @@
         </div>
         <div style="clear: both;"></div>
       </div>
-<!-- Filters Butttons
 
-    <div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
-        <button class="button" data-filter=".metal">metal</button>
-        <button class="button" data-filter=".transition">transition</button>
-        <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
-        <button class="button" data-filter=":not(.transition)">not transition</button>
-        <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
-        <button class="button" data-filter="numberGreaterThan50">number > 50</button>
-        <button class="button" data-filter="ium">name ends with &ndash;ium</button>
-    </div>     -->
+    <div class="button-group filters-button-group">
+      <div class="ui-group">
+        <button class="button is-checked" data-filter="*" onclick="clearFucntion()">Show All</button>
 
-    <div>
-      <button id="btn-mg" class="button" onclick="mgFunction()">MG</button>
+        <button class="button popup" id="id_button"  onclick="mgFunction(), myFunction()">Magic Gold<span class="popuptext" id="myPopup">
+          <a href="http://hublot-xplorations.com/domains/metallurgy-materials/magic-gold/">Learn More about Magic Gold</a></span></button>
+
+        <button class="button popup" id="id_button"  onclick="rcFunction(), myFunction()">Red Ceramic<span class="popuptext" id="myPopup">
+            <a href="http://hublot-xplorations.com/domains/metallurgy-materials/ceramics/">Learn More about Red Ceramic</a></span></button>
+
+         <button class="button popup" id="id_button"  onclick="myFunction(), elFunction()">Electrum<span class="popuptext" id="myPopup">
+            <a href="http://hublot-xplorations.com/fr/?p=32">Learn More about Electrum</a></span></button>
+
+            <button class="button popup" id="id_button"  onclick="myFunction(), cbFunction()">Corinthian Bronze<span class="popuptext" id="myPopup">
+              <a href="http://hublot-xplorations.com/fr/2018/05/bronze-de-corinthe/">Learn More about Corinthian Bronze</a></span></button>
+
+              <button class="button popup" id="id_button"  onclick="myFunction(), ngFunction()">Nordic Gold<span class="popuptext" id="myPopup">
+                <a href="http://hublot-xplorations.com/fr/?p=32">Learn More about Nordic Gold</a></span></button>
+  
+      </div>
     </div>
 
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="table.js"></script>
+    <!-- <script src="filter.js"></script> -->
 
     <!--<script src="script.js"></script> -->
 </body>

@@ -3,6 +3,7 @@
   body {
     font-family: Arial;
     transform:(translateZ(0)); /* prevent flashing */
+    
   }
 
   /* Buttons START */
@@ -73,7 +74,7 @@
 
   /* Buttons END */
 
-  .periodic {
+  .periodic{
     position: relative;
     height: 200px;
     margin-right: -1px;
@@ -106,7 +107,7 @@
     pointer-events: none;
     transition: (all 200ms ease);
     
-    background-color: rgba(0, 128, 128, 0.6);
+    background-color: rgba(125, 125, 125, 0.6);
   }
   
   .cell:hover .element {
@@ -114,7 +115,7 @@
     transform:(scale(3,3));
     z-index: 1;
     
-    background-color: rgba(0, 128, 128, 0.9);
+    background-color: rgba(125, 125, 125, 0.9);
   }
   
   .at_num,
@@ -151,7 +152,7 @@
   /* styles based on nth-child */
   .cell:nth-child(-n+2) .element,
   .cell:nth-child(n+13) .element {
-    background-color: rgba(0, 160, 96, 0.6);
+    background-color: rgba(222, 43, 43, 0.6);
   }
   
   .cell:nth-child(1) .element,
@@ -159,21 +160,21 @@
   .periodic-row:nth-child(3) .cell:nth-child(n+15) .element,
   .periodic-row:nth-child(4) .cell:nth-child(n+16) .element,
   .periodic-row:nth-child(5) .cell:nth-child(n+17) .element {
-    background-color: rgba(0, 192, 64, 0.6);
+    background-color: rgba(51, 51, 51, 0.6);
   }
   
   .periodic-row:nth-child(-n+6) .cell:nth-child(18) .element {
-    background-color: rgba(64, 192, 0, 0.6);
+    background-color: rgba(145, 145, 145, 0.6);
   }
   
   .periodic-row:nth-child(n+9) .element {
-    background-color: rgba(0, 96, 160, 0.6);
+    background-color: rgba(23,23,23, 0.6);
   }
   
   /* hover styles */
   .cell:nth-child(-n+2):hover .element,
   .cell:nth-child(n+13):hover .element {
-    background-color: rgba(0, 160, 96, 0.9);
+    background-color: rgba(222, 43, 43, 0.9);
   }
   
   .cell:nth-child(1):hover .element,
@@ -181,15 +182,15 @@
   .periodic-row:nth-child(3) .cell:nth-child(n+15):hover .element,
   .periodic-row:nth-child(4) .cell:nth-child(n+16):hover .element,
   .periodic-row:nth-child(5) .cell:nth-child(n+17):hover .element {
-    background-color: rgba(0, 192, 64, 0.9);
+    background-color: rgba(51, 51, 51, 0.9);
   }
   
   .periodic-row:nth-child(-n+6) .cell:nth-child(18):hover .element {
-    background-color: rgba(64, 192, 0, 0.9);
+    background-color: rgba(145, 145, 145, 0.9);
   }
   
   .periodic-row:nth-child(n+9) .cell:hover .element {
-    background-color: rgba(0, 96, 160, 0.9);
+    background-color: rgba(23,23,23, 0.9);
   }
   
   /* hover state positioning
@@ -295,3 +296,84 @@
       font-size: 30px;
     }
   }
+
+  /* ---- isotope ---- */
+
+
+/* ui group */
+
+.ui-group {
+  display: inline-block;
+}
+
+.ui-group h3 {
+  display: inline-block;
+  margin-right: 0.2em;
+  font-size: 16px;
+}
+
+.ui-group .button-group {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

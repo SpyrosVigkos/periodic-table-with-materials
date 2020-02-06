@@ -9,7 +9,7 @@ function mgFunction(){ //Magic Gold Function
     //var x = document.getElementsById("Mg").style.transform(scale(3,3));
     clearFucntion();
     document.getElementById("gold").style.transform = "scale(1.4)";   
-    document.getElementById("gold").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+    document.getElementById("gold").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
     document.getElementById("gold").style.zIndex = "10";
     document.getElementById("gold").style.border = "3px 3px 3px 3px black";
     document.getElementById("gold").style.border = "5px";
@@ -17,13 +17,13 @@ function mgFunction(){ //Magic Gold Function
    
 
     document.getElementById("boron").style.transform = "scale(1.4)";   
-    document.getElementById("boron").style.backgroundColor = "rgba(0, 160, 96, 0.9)";
+    document.getElementById("boron").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
     document.getElementById("boron").style.zIndex = "10";
     document.getElementById("boron").style.border = "5px";
 
 
     document.getElementById("carbon").style.transform = "scale(1.4)";   
-    document.getElementById("carbon").style.backgroundColor = "rgba(0, 160, 96, 0.9)";
+    document.getElementById("carbon").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
     document.getElementById("carbon").style.zIndex = "10";
     document.getElementById("carbon").style.border = "5px";
     
@@ -38,23 +38,23 @@ function rcFunction(){ //Red Ceramic Gold Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
   document.getElementById("zr").style.transform = "scale(1.4)";   
-  document.getElementById("zr").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("zr").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("zr").style.zIndex = "10";
 
  
 
   document.getElementById("oxygen").style.transform = "scale(1.4)";   
-  document.getElementById("oxygen").style.backgroundColor = "rgba(0, 160, 96, 0.9)";
+  document.getElementById("oxygen").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("oxygen").style.zIndex = "10";
 
 
   document.getElementById("se").style.transform = "scale(1.4)";   
-  document.getElementById("se").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("se").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("se").style.zIndex = "10";
 
 
   document.getElementById("ti").style.transform = "scale(1.4)";   
-  document.getElementById("ti").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("ti").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("ti").style.zIndex = "10";
 
   
@@ -67,17 +67,17 @@ function elFunction(){ //Electrium Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
   document.getElementById("gold").style.transform = "scale(1.4)";   
-  document.getElementById("gold").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("gold").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("gold").style.zIndex = "10";
   document.getElementById("gold").style.border = "5px";
 
   document.getElementById("ag").style.transform = "scale(1.4)";   
-  document.getElementById("ag").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("ag").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("ag").style.zIndex = "10";
   document.getElementById("ag").style.border = "5px";
 
   document.getElementById("pd").style.transform = "scale(1.4)";   
-  document.getElementById("pd").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("pd").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("pd").style.zIndex = "10";
   document.getElementById("pd").style.border = "5px";
   
@@ -88,22 +88,22 @@ function cbFunction(){ //Corinthian Bronze Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
   document.getElementById("gold").style.transform = "scale(1.4)";   
-  document.getElementById("gold").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("gold").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("gold").style.zIndex = "10";
   document.getElementById("gold").style.border = "5px";
 
   document.getElementById("cu").style.transform = "scale(1.4)";   
-  document.getElementById("cu").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("cu").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("cu").style.zIndex = "10";
   document.getElementById("cu").style.border = "5px";
 
   document.getElementById("sn").style.transform = "scale(1.4)";   
-  document.getElementById("sn").style.backgroundColor = "rgba(0, 160, 96, 0.9)";
+  document.getElementById("sn").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("sn").style.zIndex = "10";
   document.getElementById("sn").style.border = "5px";
 
   document.getElementById("pd").style.transform = "scale(1.4)";   
-  document.getElementById("pd").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("pd").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("pd").style.zIndex = "10";
   document.getElementById("pd").style.border = "5px";
   
@@ -113,22 +113,22 @@ function ngFunction(){ //Corinthian Bronze Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
   document.getElementById("cu").style.transform = "scale(1.4)";   
-  document.getElementById("cu").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("cu").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("cu").style.zIndex = "10";
   document.getElementById("cu").style.border = "5px";
 
   document.getElementById("sn").style.transform = "scale(1.4)";   
-  document.getElementById("sn").style.backgroundColor = "rgba(0, 160, 96, 0.9)";
+  document.getElementById("sn").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("sn").style.zIndex = "10";
   document.getElementById("sn").style.border = "5px";
 
   document.getElementById("al").style.transform = "scale(1.4)";   
-  document.getElementById("al").style.backgroundColor = "rgba(0, 160, 96, 0.9)";
+  document.getElementById("al").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("al").style.zIndex = "10";
   document.getElementById("al").style.border = "5px";
 
   document.getElementById("zn").style.transform = "scale(1.4)";   
-  document.getElementById("zn").style.backgroundColor = "rgba(0, 128, 128, 0.9)";
+  document.getElementById("zn").style.backgroundColor = "rgba(125, 125, 125, 0.9)";
   document.getElementById("zn").style.zIndex = "10";
   document.getElementById("zn").style.border = "5px";
   
