@@ -1,13 +1,20 @@
 
   var popup = document.getElementById("myPopup");
+  var popup1 = document.getElementById("myPopup1");
+  var popup2 = document.getElementById("myPopup2");
+  var popup3 = document.getElementById("myPopup3");
+  var popup4 = document.getElementById("myPopup4");
+
 
 function myFunction() {
-  popup.classList.toggle("show");
+
 }
 
 function mgFunction(){ //Magic Gold Function
     //var x = document.getElementsById("Mg").style.transform(scale(3,3));
     clearFucntion();
+    popup.classList.toggle("show");
+
     document.getElementById("gold").style.transform = "scale(1.4)";   
     document.getElementById("gold").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
     document.getElementById("gold").style.zIndex = "10";
@@ -37,6 +44,8 @@ function mgFunction(){ //Magic Gold Function
 function rcFunction(){ //Red Ceramic Gold Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
+  popup1.classList.toggle("show");
+
   document.getElementById("zr").style.transform = "scale(1.4)";   
   document.getElementById("zr").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("zr").style.zIndex = "10";
@@ -66,6 +75,8 @@ function rcFunction(){ //Red Ceramic Gold Function
 function elFunction(){ //Electrium Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
+  popup2.classList.toggle("show");
+
   document.getElementById("gold").style.transform = "scale(1.4)";   
   document.getElementById("gold").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("gold").style.zIndex = "10";
@@ -87,6 +98,8 @@ function elFunction(){ //Electrium Function
 function cbFunction(){ //Corinthian Bronze Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
+  popup3.classList.toggle("show");
+
   document.getElementById("gold").style.transform = "scale(1.4)";   
   document.getElementById("gold").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("gold").style.zIndex = "10";
@@ -112,6 +125,8 @@ function cbFunction(){ //Corinthian Bronze Function
 function ngFunction(){ //Corinthian Bronze Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
+  popup4.classList.toggle("show");
+
   document.getElementById("cu").style.transform = "scale(1.4)";   
   document.getElementById("cu").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("cu").style.zIndex = "10";
@@ -155,6 +170,11 @@ function clearFucntion(){ //Show all button -- clear all styles
 
 
   popup.classList.remove("show");
+  popup1.classList.remove("show");
+  popup2.classList.remove("show");
+  popup3.classList.remove("show");
+  popup4.classList.remove("show");
+
   //popuptext.classList.remove("show");
 
   
