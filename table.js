@@ -7,11 +7,14 @@ popup.classList.toggle("show");
 function mgFunction(){ //Magic Gold Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
+  document.getElementById("material-magic-gold").style.display = "flex";
+  
   document.getElementById("gold").style.transform = "scale(1.4)";   
   document.getElementById("gold").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
   document.getElementById("gold").style.zIndex = "10";
   document.getElementById("gold").style.border = "3px 3px 3px 3px black";
   document.getElementById("gold").style.border = "5px";
+
 
  
 
@@ -33,9 +36,12 @@ function mgFunction(){ //Magic Gold Function
   
 }
 
-function rcFunction(){ //Red Ceramic Gold Function
+function rcFunction(){ //Red Ceramic  Function
 //var x = document.getElementsById("Mg").style.transform(scale(3,3));
 clearFucntion();
+document.getElementById("material-red-ceramic").style.display = "flex";
+
+
 document.getElementById("zr").style.transform = "scale(1.4)";   
 document.getElementById("zr").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
 document.getElementById("zr").style.zIndex = "10";
@@ -62,9 +68,10 @@ document.getElementById("ti").style.zIndex = "10";
 
 }
 
-function elFunction(){ //Electrium Function
+function elFunction(){ //electrum Function
 //var x = document.getElementsById("Mg").style.transform(scale(3,3));
 clearFucntion();
+document.getElementById("material-electrum").style.display = "flex";
 document.getElementById("gold").style.transform = "scale(1.4)";   
 document.getElementById("gold").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
 document.getElementById("gold").style.zIndex = "10";
@@ -86,6 +93,8 @@ document.getElementById("pd").style.border = "5px";
 function cbFunction(){ //Corinthian Bronze Function
 //var x = document.getElementsById("Mg").style.transform(scale(3,3));
 clearFucntion();
+document.getElementById("material-corin-bronze").style.display = "flex";
+
 document.getElementById("gold").style.transform = "scale(1.4)";   
 document.getElementById("gold").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
 document.getElementById("gold").style.zIndex = "10";
@@ -108,9 +117,11 @@ document.getElementById("pd").style.border = "5px";
 
 }
 
-function ngFunction(){ //Corinthian Bronze Function
+function ngFunction(){ //Nordic Gold Function
 //var x = document.getElementsById("Mg").style.transform(scale(3,3));
 clearFucntion();
+document.getElementById("material-nordic-gold").style.display = "flex";
+
 document.getElementById("cu").style.transform = "scale(1.4)";   
 document.getElementById("cu").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
 document.getElementById("cu").style.zIndex = "10";
@@ -135,6 +146,15 @@ document.getElementById("zn").style.border = "5px";
 
 
 function clearFucntion(){ //Show all button -- clear all styles 
+document.getElementById("material-magic-gold").style.display = "none";
+document.getElementById("material-red-ceramic").style.display = "none";
+document.getElementById("material-electrum").style.display = "none";
+document.getElementById("material-corin-bronze").style.display = "none";
+document.getElementById("material-nordic-gold").style.display = "none";
+
+
+
+
 document.getElementById("gold").style = "";
 document.getElementById("boron").style = "";
 document.getElementById("carbon").style = "";
