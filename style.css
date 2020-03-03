@@ -79,6 +79,7 @@
    height: 200px;
    margin-right: -1px;
    text-shadow: none;
+   z-index: -1;
  }
  
  .periodic-row {
@@ -390,6 +391,7 @@ section {
   flex-flow: column nowrap;
   justify-content: center;
   color:gray;
+  z-index: 10;
  
 }
 
