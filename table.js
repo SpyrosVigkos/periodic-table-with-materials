@@ -7,6 +7,7 @@ popup.classList.toggle("show");
 function mgFunction(){ //Magic Gold Function
   //var x = document.getElementsById("Mg").style.transform(scale(3,3));
   clearFucntion();
+  document.getElementById("periodic-table").style.marginTop = "-158px";
   document.getElementById("material-magic-gold").style.display = "flex";
   
   document.getElementById("gold").style.transform = "scale(1.4)";   
@@ -39,6 +40,7 @@ function mgFunction(){ //Magic Gold Function
 function rcFunction(){ //Red Ceramic  Function
 //var x = document.getElementsById("Mg").style.transform(scale(3,3));
 clearFucntion();
+document.getElementById("periodic-table").style.marginTop = "-158px";
 document.getElementById("material-red-ceramic").style.display = "flex";
 
 
@@ -72,6 +74,7 @@ function elFunction(){ //electrum Function
 //var x = document.getElementsById("Mg").style.transform(scale(3,3));
 clearFucntion();
 document.getElementById("material-electrum").style.display = "flex";
+document.getElementById("periodic-table").style.marginTop = "-158px";
 document.getElementById("gold").style.transform = "scale(1.4)";   
 document.getElementById("gold").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
 document.getElementById("gold").style.zIndex = "10";
@@ -94,7 +97,7 @@ function cbFunction(){ //Corinthian Bronze Function
 //var x = document.getElementsById("Mg").style.transform(scale(3,3));
 clearFucntion();
 document.getElementById("material-corin-bronze").style.display = "flex";
-
+document.getElementById("periodic-table").style.marginTop = "-158px";
 document.getElementById("gold").style.transform = "scale(1.4)";   
 document.getElementById("gold").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
 document.getElementById("gold").style.zIndex = "10";
@@ -121,7 +124,7 @@ function ngFunction(){ //Nordic Gold Function
 //var x = document.getElementsById("Mg").style.transform(scale(3,3));
 clearFucntion();
 document.getElementById("material-nordic-gold").style.display = "flex";
-
+document.getElementById("periodic-table").style.marginTop = "-158px";
 document.getElementById("cu").style.transform = "scale(1.4)";   
 document.getElementById("cu").style.backgroundColor = "rgba(222, 43, 43, 0.9)";
 document.getElementById("cu").style.zIndex = "10";
@@ -146,6 +149,8 @@ document.getElementById("zn").style.border = "5px";
 
 
 function clearFucntion(){ //Show all button -- clear all styles 
+  document.getElementById("periodic-table").style.marginTop = ""
+
 document.getElementById("material-magic-gold").style.display = "none";
 document.getElementById("material-red-ceramic").style.display = "none";
 document.getElementById("material-electrum").style.display = "none";
